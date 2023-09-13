@@ -93,7 +93,7 @@ export default function Home() {
 
 
       <main className='flex w-full flex-col items-center justify-center dark:text-light'>
-      <Layout className='pt-16 bg-cyan-400 text-dark dark:text-light'>
+      <Layout className='pt-16 bg-primaryDark text-dark dark:text-light'>
       <h2 className='font-bold text-7xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 text-dark dark:text-orange-500'>Why Partner With Us ?</h2>
           <div className='grid w-full grid-cols-6 gap-16 sm:gap-8'>
             <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>

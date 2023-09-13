@@ -35,7 +35,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       </Link>
   
       <div className='w-1/2 flex flex-col items-start justify-center pl-6 lg:w-full lg:pl-0 lg:pt-6'> {/* Adjust padding here */}
-        <span className='text-blue-600 font-medium text-xl dark:text-orange-500 xs:text-base'>{type}</span>
+        <span className='text-primary font-medium text-xl dark:text-orange-500 xs:text-base'>{type}</span>
         <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
           <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
         </Link>
@@ -66,7 +66,7 @@ const Project = ({title, type, img, link, github})=>{
         </Link>
 
         <div className='w-full flex flex-col items-start justify-center mt-6'> {/* Adjust padding here */}
-          <span className='text-blue-600 dark:text-orange-500 font-medium text-xl lg:text-lg md:text-base'>{type}</span>
+          <span className='text-primary dark:text-orange-500 font-medium text-xl lg:text-lg md:text-base'>{type}</span>
           <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
             <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
           </Link>
