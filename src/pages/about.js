@@ -51,13 +51,13 @@ const About = () => {
           <AnimatedText text="Your Vision, Our Code." className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 sm:mt-8'/>
           <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
             <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
-            <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
+            <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-orange-500'>Biography</h2>
 <p className="font-medium">At PixelTEK, we are passionate about technology and committed to delivering innovative software solutions. With a mission to simplify complexities and drive digital transformation, we&apos;ve been serving businesses and individuals since 2023.</p>
-<h2 className="mt-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Our Story</h2>
+<h2 className="mt-4 text-lg font-bold uppercase text-dark/75 dark:text-orange-500">Our Story</h2>
 <p className="my-4 font-medium">
 Founded by a team of seasoned professionals, PixelTEK was born out of a shared vision to make technology accessible and impactful. Over the years, we&apos;ve grown into a dynamic and agile software development company known for our creativity and technical expertise.
 </p>
-<h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Our Approach</h2>
+<h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-orange-500">Our Approach</h2>
 <p className='font-medium'>
 What sets us apart is our client-centric approach. We believe in collaboration, communication, and a deep understanding of your goals. Our team works tirelessly to craft solutions that not only meet your needs but also exceed your expectations.
 </p>
@@ -79,20 +79,20 @@ What sets us apart is our client-centric approach. We believe in collaboration, 
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                 <AnimatedNumbers value={50}/>+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>satisfied clients</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-orange-500 xl:text-center md:text-lg sm:text-base xs:text-sm'>satisfied clients</h2>
               </div>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                 <AnimatedNumbers value={40}/>+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>projects completed</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-orange-500 xl:text-center md:text-lg sm:text-base xs:text-sm'>projects completed</h2>
               </div>
 
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                 <AnimatedNumbers value={4}/>+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>years of experience</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-orange-500 xl:text-center md:text-lg sm:text-base xs:text-sm'>years of experience</h2>
               </div>
 
             </div>

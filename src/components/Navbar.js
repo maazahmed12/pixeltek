@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link'; // Import Link from 'next/link' directly
 import Logo from "../components/Logo"
 import { useRouter } from 'next/router';
-import {TwitterIcon, GithubIcon, LinkedInIcon, SunIcon ,MoonIcon ,UpworkIcon, InstagramIcon} from '../components/Icons';
+import {TwitterIcon, GithubIcon, LinkedInIcon, SunIcon ,MoonIcon ,UpworkIcon, InstagramIcon, WhatsappIcon} from '../components/Icons';
 import {motion} from "framer-motion"
 import useThemeSwitcher from './Hooks/useThemeSwitcher';
 
@@ -13,7 +13,7 @@ const CustomLink = ({ href, title, className = '' }) => {
     return (
       <Link href={href} className={`${className} relative group`}>
         {title}
-        <span className={`h-[2px] inline-block bg-dark absolute left-0 bottom-0 group-hover:w-full transition-width ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-light`}>
+        <span className={`h-[2px] inline-block bg-dark absolute left-0 bottom-0 group-hover:w-full transition-width ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-orange-500`}>
           &nbsp;
         </span>
       </Link>
@@ -70,6 +70,7 @@ const Navbar = () => {
       <nav className='flex items-center justify-center flex-wrap'>
         <motion.a href="https://twitter.com/PixellTek" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3' whileTap={{scale:0.9}}><TwitterIcon/></motion.a>
         <motion.a href="https://www.upwork.com/agencies/1700891203159498752/" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3' whileTap={{scale:0.9}}><UpworkIcon/></motion.a>
+        <motion.a href="whatsapp://send?phone=+923330195702" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3' whileTap={{scale:0.9}}><WhatsappIcon/></motion.a>
         <motion.a href="https://www.linkedin.com/company/pixeltek-softwares/about/?viewAsMember=true" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3' whileTap={{scale:0.9}}><LinkedInIcon/></motion.a>
         <motion.a href="https://www.instagram.com/pixelteksoftwares/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3' whileTap={{scale:0.9}}><InstagramIcon/></motion.a>
       
@@ -106,9 +107,9 @@ const Navbar = () => {
          <nav className='flex items-center justify-center flex-wrap mt-2'>
            <motion.a href="https://twitter.com/PixellTek" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}><TwitterIcon/></motion.a>
            <motion.a href="https://www.upwork.com/agencies/1700891203159498752/" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1' whileTap={{scale:0.9}}><UpworkIcon/></motion.a>
+           <motion.a href="whatsapp://send?phone=+923330195702" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3' whileTap={{scale:0.9}}><WhatsappIcon/></motion.a>
            <motion.a href="https://www.linkedin.com/company/pixeltek-softwares/about/?viewAsMember=true" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}><LinkedInIcon/></motion.a>
            <motion.a href="https://www.instagram.com/pixelteksoftwares/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1" target={"_blank"}whileHover={{y:2}}className='w-6 mx-3 sm:mx-1' whileTap={{scale:0.9}}><InstagramIcon/></motion.a>
-         
            <div>
      <button
        onClick={() => setMode(mode === "light" ? "dark" : "light")}

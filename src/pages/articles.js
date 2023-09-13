@@ -21,8 +21,8 @@ const Article = ({ title, point1,point2,point3,point4,point5 ,summary, time, img
       <p className="text-sm font-semibold mb-2">{point4}</p>
       <p className="text-sm font-semibold mb-2">{point5}</p>
 
-      <span className="text-blue-600 font-semibold dark:text-primaryDark">{time}</span>
-      <button onClick={closeArticle} className="w-full absolute bottom-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-500">
+      <span className="text-blue-600 font-semibold dark:text-orange-500">{time}</span>
+      <button onClick={closeArticle} className="w-full absolute bottom-4 right-4 text-dark hover:text-blue-600 dark:text-light dark:hover:text-orange-500">
         Close
       </button>
     </div>
@@ -54,7 +54,7 @@ const FeaturedArticle = ({ title, point1,point2,point3,point4,point5 ,summary, t
           {/* <p className="text-sm mb-2">{summary}</p> */}
           {/* <p className="text-sm mb-2">{point1}</p> */}
 
-          <span className="text-blue-600 font-semibold dark:text-primaryDark">{time}</span>
+          <span className="text-light font-semibold dark:text-orange-500">{time}</span>
         </li>
       )}
     </div>
